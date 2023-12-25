@@ -8,13 +8,13 @@ import re
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 
-application = Flask(__name__)
-@application.route('/')
+app = Flask(__name__)
+@app.route('/')
 
 def home():
     return render_template("main.html")
 
-@application.route("/predict", methods = ["POST"])
+@app.route("/predict", methods = ["POST"])
 
 def predict():
     # loading the dataset
