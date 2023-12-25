@@ -14,7 +14,7 @@ app = Flask(__name__)
 def home():
     return render_template("main.html")
 
-@app.route("/predict", methods = ["POST"])
+@app.route('/predict', methods = ["POST"])
 
 def predict():
     # loading the dataset
