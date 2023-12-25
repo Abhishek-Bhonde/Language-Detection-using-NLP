@@ -11,9 +11,11 @@
     <br>
     <div class="wrapper">
 
-                <form action="{{ url_for('predict')}}" method="post" class="paper">
+                
 			
 			<div class="margin">Language Detection</div>
+
+	    <form action="{{ url_for('predict')}}" method="post" class="paper">
 			<textarea placeholder="Enter something in any language." class="text_area" name="text" rows="8" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
 			<br>
 			<input type="submit" value="Guess Language" class="button">
