@@ -18,7 +18,7 @@ def home():
 
 def predict():
     # loading the dataset
-    data = pd.read_csv("Language_Detection.csv")
+    data = pd.read_csv("Language Detection.csv")
     y = data["Language"]
 
     # label encoding
